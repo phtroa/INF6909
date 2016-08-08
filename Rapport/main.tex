@@ -1,0 +1,71 @@
+\documentclass[12pt, openany]{article}%{{{
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[a4paper,left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\usepackage[frenchb]{babel}
+\usepackage{libertine}
+\usepackage{hyperref}
+\usepackage{float}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[dvipsnames]{xcolor}
+\usepackage[pdftex]{graphicx}
+
+\setlength{\parindent}{0cm}
+\setlength{\parskip}{1ex plus 0.5ex minus 0.2ex}
+\newcommand{\hsp}{\hspace{20pt}}
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+
+\begin{document}
+
+\begin{titlepage}
+  \begin{sffamily}
+  \begin{center}
+
+    % Upper part of the page. The '~' is needed because \\
+    % only works if a paragraph has started.
+    \includegraphics[scale=1]{Images/polytechnique_genie_gauche_fr_rgb.png}~\\[1.5cm]
+
+    \textsc{\LARGE École Polytechnique Montréal}\\[2cm]
+
+    \textsc{\Large INF6909 : Projet d'études supérieures}\\[1.5cm]
+
+    % Title
+    \HRule \\[0.4cm]
+    { \huge \bfseries SSVR\\[0.4cm] }
+
+    \HRule \\[2cm]
+    \includegraphics[scale=0.5]{Images/polytechnique_genie_gauche_fr_rgb.png}
+    \\[2cm]
+
+    % Author and supervisor
+    \begin{minipage}{0.4\textwidth}
+      \begin{flushleft} \large
+          Philippe TROCLET \textsc{1815208}\\
+      \end{flushleft}
+    \end{minipage}
+    \begin{minipage}{0.4\textwidth}
+      \begin{flushright} \large
+        \emph{Soumis à :} Mme. Bellaïche\\
+        \emph{Soumis le :} \today
+      \end{flushright}
+    \end{minipage}
+
+    \vfill
+
+  \end{center}
+  \end{sffamily}
+\end{titlepage}
+%}}}
+\newpage
+\tableofcontents
+\newpage
+
+\section{Introduction}
+\input{introduction.tex}
+\section{Conclusion}
+
+% Pour les références
+\bibliographystyle{unsrt}
+\bibliography{main}
+\end{document}
